@@ -1,0 +1,28 @@
+import java.util.*;
+
+public class backward
+{
+  public static void main(String[] args)
+  {
+   Scanner scan = new Scanner(System.in);
+   int number;
+
+  System.out.print("Enter a 4 digit number:  ");
+  number = scan.nextInt();
+
+                System.out.println("The number entered is = " + number);
+
+                int back = 1;
+
+                System.out.print("The number backward is = ");
+
+                for (int i = 1; i<=4; i++)
+                {
+                back = 10;
+                int rev = number % back;
+                        System.out.print(rev);
+                number/=10;
+                }
+  }
+}
+
